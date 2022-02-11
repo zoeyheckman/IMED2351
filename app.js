@@ -39,9 +39,9 @@ const hobby1 = "baking";
 const hobby2 = "watching cartoons";
 console.log(`Hello, it's me, ${name}, and I am ${age} years old. I enjoy ${hobby1} and also ${hobby2}.`);
 
-if (time < 12){                       //CONDITIONAL STATEMENT
+if (hour < 12){                       //CONDITIONAL STATEMENT
     greeting = "Top of the morning to you!";
-} else if (time < 18){
+} else if (hour < 18){
     greeting = "Top of the day to you!";
 } else {
     greeting = "Top of the evening to you!";
