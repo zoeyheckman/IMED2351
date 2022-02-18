@@ -16,6 +16,7 @@ fullTitle : function() {
     return this.meat + "and" + this.starch  
 }
 };
+}
 const name = "Dev Zoey;"
 
 console.log("name");
@@ -87,3 +88,59 @@ document.getElementById("demo").innerHTML =string.slice(2,11);
 let x=new Date("1998-05-20");           //NUMBER METHOD
 document.getElementById("demo").innerHTML = Number(x);
 }
+//5.4 Assignment
+{                         
+const foods = ["soup", "bread", "wraps", "salads", "pasta"];    //FOR LOOP
+
+for (food of foods){          
+    if (food ==='soup'){
+    console.log("I really like soup");
+    break;
+}
+}
+}
+
+let loading = 0;            //WHILE LOOP
+while(loading <100){
+    console.log('Website is still loading');
+    loading ++;
+}
+{
+const text = document.querySelector(".title");
+const changeColor = document.querySelector('.changeColor') //CHANGE CSS
+
+text.classList.add("change")
+
+changeColor.addEventListener('click', function(){
+    text.classList.add("change");
+})
+
+const userList = document.querySelector(".allies-list li");
+const listInput = document.querySelector(".allies-input");
+const addListBtn = document.querySelector(".addListBtn");
+
+addListBtn.addEventListener('click', function(){
+    const newLi = document.createElement('Li');
+    const liContent= document.createTextNode(listInput.value);
+    newLi.appendChild(liContent);
+    userList.appendChild(newLi);
+});
+}
+//functions
+     function mDown(obj) {
+    obj.style.backgroundColor = "black";
+    obj.style.color ="white";
+    obj.innerHTML = "BOO!";
+  }
+  function mUp(obj) {
+    obj.style.backgroundColor="greenyellow";
+    obj.innerHTML="You're Cool!";
+  }
+{
+    const addListBtn = document.getElementById(".myBtn");
+    addListBtn.addEventListener("mousedown", function mDown() {
+  })
+  addListBtn.addEventListener("mouseup", function mUp() {
+  })
+}
+
