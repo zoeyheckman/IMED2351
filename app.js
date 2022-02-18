@@ -7,7 +7,7 @@ var x = 1000;       //GLOBAL
     y = 20;         
     z = x + y;       //mathematical
 }
-
+{
 const food = {          //Object with properties
 meat = "chicken",
 broth:"vegetable",
