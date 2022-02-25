@@ -144,3 +144,22 @@ addListBtn.addEventListener('click', function(){
   })
 }
 
+//6.4 Assignment
+
+const dessert = { //OBJECT
+    firstName:"Lemon Meringue",
+    lastName:"Pie",
+    id:014,
+    fullName:function() {
+        return this.firstName +" "+this.lastName;
+    }
+};
+
+console.log( dessert.fullName +"is my favorite" +dessert.lastName)
+
+  dessert.name = dessert.fullName;          //OBJECT METHOD
+  dessert.name  =function(){
+      return(this.firstName + " "+ this.lastName).toUpperCase();  }
+                               
+const meals = ["For One", "For Two", "For Family", "For Potluck"]; //ARRAY
+document.getElementById("demo").innerHTML = meals.join("*");      //ARRAY METHOD
